@@ -343,8 +343,8 @@
         document.onkeydown = function(evt){
             if(screen_gameover.style.display == "block"){
                 evt = evt || window.event;
-                if(evt.keyCode == 32){
-                    newGame();
+                if(evt.keyCode == 13){
+                    function(){showScreen(1)};
                 }
             }
         }
