@@ -30,6 +30,10 @@
     var button_newgame_gameover;
     var button_setting_menu;
     var button_setting_gameover;
+    var button_instruction_menu;
+    var button_mainmenu_gameover;
+    var button_instruction_mainmenu;
+    var screen_instruction;
     var ele_score;
     var speed_setting;
     var wall_setting;
@@ -229,6 +233,7 @@
     // 1 for the main menu
     // 2 for the settings screen
     // 3 for the game over screen
+    // 4 for instruction screen
     var showScreen = function(screen_opt){
         switch(screen_opt){
                 
@@ -236,24 +241,35 @@
                      screen_menu.style.display = "none";
                      screen_setting.style.display = "none";
                      screen_gameover.style.display = "none";
+                     screen_instruction.style.display = "none";
                      break;
                 
             case 1:  screen_snake.style.display = "none";
                      screen_menu.style.display = "block";
                      screen_setting.style.display = "none";
                      screen_gameover.style.display = "none";
+                     screen_instruction.style.display = "none"; 
                      break;
                 
             case 2:  screen_snake.style.display = "none";
                      screen_menu.style.display = "none";
                      screen_setting.style.display = "block";
                      screen_gameover.style.display = "none";
+                     screen_instruction.style.display = "none";
                      break;
                 
             case 3: screen_snake.style.display = "none";
                     screen_menu.style.display = "none";
                     screen_setting.style.display = "none";
                     screen_gameover.style.display = "block";
+                    screen_instruction.style.display = "none";
+                    break;
+                
+            case 4: screen_snake.style.display = "none";
+                    screen_menu.style.display = "none";
+                    screen_setting.style.display = "none";
+                    screen_gameover.style.display = "none";
+                    screen_instruction.style.display = "block";
                     break;
         }
     }
@@ -270,6 +286,7 @@
             screen_menu = document.getElementById("menu");
             screen_gameover = document.getElementById("gameover");
             screen_setting = document.getElementById("setting");
+            screen_instruction = document.getElementById("instruction");
         
             // Buttons
             button_newgame_menu = document.getElementById("newgame_menu");
@@ -277,6 +294,9 @@
             button_newgame_gameover = document.getElementById("newgame_gameover");
             button_setting_menu = document.getElementById("setting_menu");
             button_setting_gameover = document.getElementById("setting_gameover");
+            button_instruction_menu = document.getElementById("instruction_menu");
+            button_mainmenu_gameover = document.getElementById("mainmenu_gameover");
+            button_instruction_mainmenu = document.getElementById("instruction_mainmenu");
         
             // etc
             ele_score = document.getElementById("score_value");
@@ -290,6 +310,10 @@
         button_newgame_setting.onclick = function(){newGame();}; 
         button_setting_menu.onclick = function(){showScreen(2);};
         button_setting_gameover.onclick = function(){showScreen(2)};
+        button_instruction_menu = function(){showScreen(4)};
+        button_mainmenu_gameover = function(){showScreen(1)};
+        button_instruction_mainmenu = function(){showScreen(1)};
+        
 
         setSnakeSpeed(150);
         setWall(1);
