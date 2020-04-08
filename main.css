@@ -1,5 +1,8 @@
             ::selection {color:#FFFFFF; background:transparent;}
-            ::-moz-selection {color:#FFFFFF; background:transparent;
+            ::-moz-selection {color:#FFFFFF; background:transparent;}
+            ::-moz-background-size: contain;
+            ::-webkit-background-size: contain;
+            ::-o-background-size: contain;
             
             *{
                 margin: 0;
@@ -7,10 +10,7 @@
                 font-family: "Arial";
             }
             body{
-                background-image: url("proj bg.gif") no-repeat center center fixed;
-                -webkit-background-size: contain;
-                -moz-background-size: contain;
-                -o-background-size: contain;
+                background-image: url("proj bg.gif") no-repeat center center fixed;               
                 background-size: contain;
                 background-color: #000000;
             }
