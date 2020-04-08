@@ -211,6 +211,11 @@
     }
     
     /////////////////////////////////////////////////////////////
+    var mainMenu = function(){
+        showScreen(1);
+    }    
+    
+    ////////////////////////////////////////////////////////////
     
     // Change the snake speed...
     // 150 = slow
@@ -344,7 +349,7 @@
             if(screen_gameover.style.display == "block"){
                 evt = evt || window.event;
                 if(evt.keyCode == 13){
-                    function(){showScreen(1)};
+                    mainMenu();
                 }
             }
         }
