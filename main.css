@@ -8,7 +8,7 @@
                 font-family: "Arial";
             }
             body{
-                background-image: url("projbg.jpg") no-repeat center center fixed;               
+                background-image: url("projbg.jpg");               
                 background-color: #000000;
             }
             .wrap{
