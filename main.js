@@ -312,10 +312,10 @@
         button_newgame_setting.onclick = function(){newGame();}; 
         button_setting_menu.onclick = function(){showScreen(2);};
         button_setting_gameover.onclick = function(){showScreen(2)};
-        button_instruction_menu = function(){showScreen(4)};
-        button_mainmenu_gameover = function(){showScreen(1)};
-        button_instruction_mainmenu = function(){showScreen(1)};
-        button_mainmenu_setting = function(){showScreen(1)};
+        button_instruction_menu.onclick = function(){showScreen(4)};
+        button_mainmenu_gameover.onclick = function(){showScreen(1)};
+        button_instruction_mainmenu.onclick = function(){showScreen(1)};
+        button_mainmenu_setting.onclick = function(){showScreen(1)};
         
 
         setSnakeSpeed(150);
