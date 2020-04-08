@@ -1,9 +1,10 @@
             ::selection {color:#FFFFFF; background:transparent;}
             ::-moz-selection {color:#FFFFFF; background:transparent;}
             
-            @fontface{
+            @font-face{
                         font-family: arcadeFont;
                         src: url(pressstart2p-regular-webfont.woff);
+                        src: url(pressstart2p-regular-webfont.woff2);
             }
 
             
