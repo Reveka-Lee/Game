@@ -282,6 +282,7 @@
             screen_menu = document.getElementById("menu");
             screen_gameover = document.getElementById("gameover");
             screen_setting = document.getElementById("setting");
+            screen_instruction = document.getElementById("instruction");
         
             // Buttons
             button_newgame_menu = document.getElementById("newgame_menu");
@@ -289,6 +290,9 @@
             button_newgame_gameover = document.getElementById("newgame_gameover");
             button_setting_menu = document.getElementById("setting_menu");
             button_setting_gameover = document.getElementById("setting_gameover");
+            button_instruction_menu = document.getElementById("instruction_menu");
+            button_mainmenu_instruction = document.getElementById("mainmenu_instruction");
+            button_mainmenu_gameover = document.getElementById("mainmenu_gameover");
         
             // etc
             ele_score = document.getElementById("score_value");
@@ -302,6 +306,9 @@
         button_newgame_setting.onclick = function(){newGame();}; 
         button_setting_menu.onclick = function(){showScreen(2);};
         button_setting_gameover.onclick = function(){showScreen(2)};
+        button_instruction_menu.onclick = function(){showScreen(4)};
+        button_mainmenu_instruction.onclick = function(){showScreen(1)};
+        button_mainmenu_gameover.onclick = function(){showScreen(1)};
 
         setSnakeSpeed(150);
         setWall(1);
