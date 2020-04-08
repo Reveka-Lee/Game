@@ -34,6 +34,7 @@
     var button_mainmenu_gameover;
     var button_instruction_mainmenu;
     var screen_instruction;
+    var button_mainmenu_setting;
     var ele_score;
     var speed_setting;
     var wall_setting;
@@ -297,6 +298,7 @@
             button_instruction_menu = document.getElementById("instruction_menu");
             button_mainmenu_gameover = document.getElementById("mainmenu_gameover");
             button_instruction_mainmenu = document.getElementById("instruction_mainmenu");
+            button_mainmenu_setting = document.getElementById("mainmenu_setting");
         
             // etc
             ele_score = document.getElementById("score_value");
@@ -313,6 +315,7 @@
         button_instruction_menu = function(){showScreen(4)};
         button_mainmenu_gameover = function(){showScreen(1)};
         button_instruction_mainmenu = function(){showScreen(1)};
+        button_mainmenu_setting = function(){showScreen(1)};
         
 
         setSnakeSpeed(150);
