@@ -9,7 +9,6 @@
             }
             body{
                 background-image: url("projbg.jpg") no-repeat center center fixed;               
-                background-size: contain;
                 background-color: #000000;
             }
             .wrap{
