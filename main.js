@@ -23,6 +23,7 @@
     // HTML Elements
     var screen_snake;
     var screen_menu;
+    var screen_instruction;
     var screen_setting;
     var screen_gameover;
     var button_newgame_menu;
@@ -30,6 +31,7 @@
     var button_newgame_gameover;
     var button_setting_menu;
     var button_setting_gameover;
+    var button_mainmenu_gameover;
     var ele_score;
     var speed_setting;
     var wall_setting;
