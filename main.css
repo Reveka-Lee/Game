@@ -8,6 +8,7 @@
             }
             body{
                 background-image: url("proj bg.gif");
+                background-size: auto;
                 background-color: #000000;
             }
             .wrap{
