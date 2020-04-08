@@ -38,7 +38,7 @@
     var speed_setting;
     var wall_setting;
     
-    /////////////////////////////////////////////////////////////
+       /////////////////////////////////////////////////////////////
 
     var activeDot = function(x, y){
         ctx.fillStyle = "#FFFFFF";
@@ -211,11 +211,6 @@
     }
     
     /////////////////////////////////////////////////////////////
-    var mainMenu = function(){
-        showScreen(1);
-    }    
-    
-    ////////////////////////////////////////////////////////////
     
     // Change the snake speed...
     // 150 = slow
@@ -349,7 +344,7 @@
             if(screen_gameover.style.display == "block"){
                 evt = evt || window.event;
                 if(evt.keyCode == 32){
-                    mainMenu();
+                    newGame();
                 }
             }
         }
