@@ -1,8 +1,6 @@
             ::selection {color:#FFFFFF; background:transparent;}
             ::-moz-selection {color:#FFFFFF; background:transparent;}
-            ::-moz-background-size: contain;
-            ::-webkit-background-size: contain;
-            ::-o-background-size: contain;
+
             
             *{
                 margin: 0;
