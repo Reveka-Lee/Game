@@ -233,6 +233,7 @@
     // 1 for the main menu
     // 2 for the settings screen
     // 3 for the game over screen
+    // 4 for the instruction screen
     var showScreen = function(screen_opt){
         switch(screen_opt){
                 
@@ -258,6 +259,13 @@
                     screen_menu.style.display = "none";
                     screen_setting.style.display = "none";
                     screen_gameover.style.display = "block";
+                    break;
+            
+            case 4: screen_snake.style.display = "none";
+                    screen_menu.style.display = "none";
+                    screen_setting.style.display = "none";
+                    screen_gameover.style.display = "none";
+                    screen_instruction.style.display = "block";
                     break;
         }
     }
