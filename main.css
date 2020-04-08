@@ -166,3 +166,8 @@
             #instruction p{
                margin-top: 10px;
             }
+
+            #instruction h2{
+               margin-top: 10px; 
+               text-align: center;
+            }
