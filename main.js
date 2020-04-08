@@ -31,7 +31,9 @@
     var button_newgame_gameover;
     var button_setting_menu;
     var button_setting_gameover;
+    var button_instruction_menu;
     var button_mainmenu_gameover;
+    var button_mainmenu_instruction;
     var ele_score;
     var speed_setting;
     var wall_setting;
