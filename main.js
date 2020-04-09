@@ -42,7 +42,7 @@
     /////////////////////////////////////////////////////////////
 
     var activeDot = function(x, y){
-        ctx.fillStyle = "#FFFFFF";
+        ctx.fillStyle = "#d4b8f2";
         ctx.fillRect(x * 10, y * 10, 10, 10);
     }
     
