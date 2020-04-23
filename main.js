@@ -116,15 +116,7 @@
         // --------------------
 
         // Wall
-        
-            if(wall == 1){
-            // On
-                if (snake[0].x < 0 || snake[0].x == canvas.width / 10 || snake[0].y < 0 || snake[0].y == canvas.height / 10){
-                    showScreen(3);
-                    return;
-                }
-            }else{
-            // Off
+
                 for(var i = 0, x = snake.length; i < x; i++){
                     if(snake[i].x < 0){
                         snake[i].x = snake[i].x + (canvas.width / 10);
